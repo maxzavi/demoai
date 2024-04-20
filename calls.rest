@@ -1,5 +1,10 @@
+
 curl --location 'http://localhost:8080/api/demo/'
 
 ###
 
 curl --location 'http://localhost:8080/api/demo/detail?name=Corona'
+
+###
+
+curl --location 'http://localhost:8080/api/nobel/1989'
