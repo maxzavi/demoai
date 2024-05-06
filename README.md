@@ -20,6 +20,18 @@ spring:
         options:
           model: gpt-3.5-turbo      
 ```
+## Groq
+
+In case use Groq, it's free, model **mixtral**: **mixtral-8x7b-32768**:
+
+```yml
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: mixtral-8x7b-32768
+        base-url: https://api.groq.com/openai
+```
 
 Set environment variable in SO:
 

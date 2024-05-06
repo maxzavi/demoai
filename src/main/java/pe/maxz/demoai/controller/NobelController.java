@@ -21,7 +21,7 @@ public class NobelController {
     public Author getByNameDetail(@PathVariable String year){
         BeanOutputParser<Author> parser = new BeanOutputParser<>(Author.class);
         String promt= """
-            Quien gano el premio nobel de literatura el año {year}
+            Quien gano el premio nobel de literatura del año {year}? en caso de que no exista, no devolver nada
             {format}
             """;
         PromptTemplate promptTemplate = new PromptTemplate(promt);

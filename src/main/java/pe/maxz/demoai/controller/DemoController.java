@@ -16,7 +16,11 @@ public class DemoController {
     
     @GetMapping("/")
     public String getAll(){
-        return chatClient.call("cervezas nacionales e internacionales que se venden en Peru");
+        String prompt="""
+            Lista de todas las cervezas de todo el mundo que se venden en Peru, con su grado de alcohol y 
+            su pais de procedencia
+                """;
+        return chatClient.call(prompt);
     }
 
     @GetMapping("/detail")
