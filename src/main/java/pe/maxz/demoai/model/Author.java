@@ -1,5 +1,5 @@
 package pe.maxz.demoai.model;
 
-public record Author(String nombre, String pais) {
+public record Author(String nombre, String pais, String generoLiterario) {
 
 }
